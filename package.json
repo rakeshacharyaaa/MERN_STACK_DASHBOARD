@@ -1,0 +1,20 @@
+{
+  "name": "mern-stack-dashboard",
+  "version": "1.0.0",
+  "description": "A full-stack dashboard application built with the MERN stack",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd admin_panel && npm run dev",
+    "install-all": "npm install && cd backend && npm install && cd ../admin_panel && npm install",
+    "build": "cd admin_panel && npm run build",
+    "start": "cd backend && npm start"
+  },
+  "keywords": ["mern", "dashboard", "react", "node", "mongodb", "express"],
+  "author": "Rakesh Acharya",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^7.0.0"
+  }
+}
